@@ -172,7 +172,7 @@ if (condition == 17) {
 }
 
 // Si, Sinon Si, Sinon (if, else if, else)
-if (condition == 17) {
+if (condition > 17) {
     console.log('tout est ok');
 } else if (condition == 19) {
     console.log('là ça va');
@@ -181,13 +181,6 @@ if (condition == 17) {
 } else {
     console.log('Houston, nous avons un problème');
 }
-
-// Ecrire un algorithme qui demande à l'utilisateur son age. 
-// Il indique ensuite à l'utilisateur quel film il peut aller voir.
-// "Action Man" si moins de 13 ans
-// "Matrix" si il a entre 13 et 18 ans
-// "Evil Dead" si plus de 18 ans
-// Sinon il n'ya aucun film pour lui
 
 /* --------------------------- 07 - OPERATEURS DE COMPARAISON --------------------------- */
 // 
@@ -212,4 +205,23 @@ if (condition >= 18) {
     console.log('Tu es majeur, bravo');
 } else {
     console.log('Houston, nous avons un problème');
+}
+
+// Les opérateurs logique OU (||) et ET (&&)
+let permis = true;
+if (condition >= 18 || (permis == true && test === 'toto')) {
+    console.log('Tu es majeur et tu as le permis');
+} else {
+    console.log('Houston, nous avons 2 problèmes');
+}
+
+const ageUser = prompt('Quel est votre age?')
+if(ageUser<13){
+    console.log('Vous pouvez aller voir Action Man');
+} else if (ageUser>=13 && ageUser<=18){
+    console.log('Vous pouvez aller voir Matrix');
+} else if(ageUser>18){
+    console.log('Vous pouvez aller voir Evil dead');
+} else {
+    console.log('Pas de film pour vous!');
 }
