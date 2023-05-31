@@ -1,19 +1,19 @@
 /* --------------------------- TYPES DE DONNEES PRIMITIFS --------------------------- */
 
 // String (Chaine de cactères)
-let string2 = 'Je suis du texte';
+const string2 = 'Je suis du texte';
 
 // Number (Tous les types d'ecritures numériques sont possibles : positif, negatif, decimal)
-let nombre  = 18;    //number
-let decimal = 20.3;  //number
-let negatif = -10;   //number
+const nombre  = 18;    //number
+const decimal = 20.3;  //number
+const negatif = -10;   //number
 
 // Boolean (Booléens)
 // Variable de type booleen n'a que 2 valeurs possibles : TRUE ou FALSE
-let booleen  = true;   //boolean
-let booleen2 = false;  //boolean
+const booleen  = true;   //boolean
+const booleen2 = false;  //boolean
 
-let nul = null; //null
+const nul = null; //null
 
 let test; //undefined
 

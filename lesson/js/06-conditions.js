@@ -2,7 +2,7 @@
 
 // Les opérateurs de comparaison (==, ===, !==, !=, >, >=, <, <=)
 
-let condition = 17;
+const condition = 17;
 
 // Si la condition est vraie, le bloc d'instructions est exécuté
 // Sinon il est ignoré

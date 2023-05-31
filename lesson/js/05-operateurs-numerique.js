@@ -2,7 +2,7 @@
 
 // +, -, *, /, %, **
 
-let operation = 10 + 5; //Addition
+const operation = 10 + 5; //Addition
 console.log(`le resultat est ${operation}`); //15
 
 operation = 10 - 5; //Soustraction
@@ -21,7 +21,7 @@ console.log(`le resultat est ${operation}`); //1
 operation = 10 ** 3; //Puissance
 console.log(`le resultat est ${operation}`); //100
 
-let number = prompt('Donnez-moi un nombre ?');
-let number2 = prompt('Donnez-moi un deuxieme nombre ?');
-let result = number * number2;
+const number = prompt('Donnez-moi un nombre ?');
+const number2 = prompt('Donnez-moi un deuxieme nombre ?');
+const result = number * number2;
 console.log(`le resultat de la multiplication est ${result}`);

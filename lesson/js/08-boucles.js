@@ -9,14 +9,15 @@
 */
 
 // Boucle : for(){...} (pour)
+const num = 9;
 for (let i = 0; i < 10; i++) {
 
-    let result = i * number
-    console.log(`${number} x ${i} = ${result}`);
+    let result = i * num
+    console.log(`${num} x ${i} = ${result}`);
 }
 
 // Boucle : while(){...} (tant que)
-let number = prompt('quelle table de multiplication voulez-vous?')
+const number = prompt('quelle table de multiplication voulez-vous?')
 let i = 0;
 
 while (i < 10) {
@@ -33,7 +34,7 @@ const magicNumber = 9;
 while (answer != magicNumber) {
     answer = prompt('Essayez encore!')
 }
-console.log('felicitation');
+console.log('Félicitation, vous avez trouvez le nombre magique !');
 
 /*
     La population de la ville Marrakech est de 1, 000, 000 d’habitants et elle augmente de 50, 000 habitants par an.
@@ -43,11 +44,11 @@ console.log('felicitation');
 
 let marrakech = 1000000;
 let agadir = 500000;
-let year = 0;
+let years = 0;
 
 while (marrakech > agadir) {
     marrakech = marrakech + 50000
     agadir = agadir + (agadir * 8 / 100)
-    year++;
+    years++;
 }
-console.log(year);
+console.log(`Il faudra ${years} ans pour que la population d'Agadir dépasse celle de Marrakech`);

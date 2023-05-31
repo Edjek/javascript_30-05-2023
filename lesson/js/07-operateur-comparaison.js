@@ -24,7 +24,7 @@ if (condition >= 18) {
 }
 
 // Les opérateurs logique OU (||) et ET (&&)
-let permis = true;
+const permis = true;
 if (condition >= 18 || (permis == true && test === 'toto')) {
     console.log('Tu es majeur et tu as le permis');
 } else {
