@@ -2,14 +2,20 @@
 
 // Les boucles sont des structurs permettant d'executer plusieurs fois des instructions
 
-// Boucle for(){...} (pour)
+/*
+    la principale différence entre "for" et "while" est que :
+    "for" est généralement utilisé lorsque le nombre d'itérations est connu à l'avance,
+    "while" est utilisé lorsque le nombre d'itérations est inconnu à l'avance et dépend d'une condition spécifique.
+*/
+
+// Boucle : for(){...} (pour)
 for (let i = 0; i < 10; i++) {
 
     let result = i * number
     console.log(`${number} x ${i} = ${result}`);
 }
 
-// BOUCLE while(){...} (tant que)
+// Boucle : while(){...} (tant que)
 let number = prompt('quelle table de multiplication voulez-vous?')
 let i = 0;
 
@@ -45,4 +51,3 @@ while (marrakech > agadir) {
     year++;
 }
 console.log(year);
-
