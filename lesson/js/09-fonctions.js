@@ -99,3 +99,14 @@ function nineTable(num, end) {
 }
 
 nineTable(10, 100)
+
+const add = function (x, y) {
+    return x + y
+}
+const res4 = add(12,13)
+console.log(res4);
+
+const divide = ()=>{
+    
+}
+
