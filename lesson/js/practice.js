@@ -1,19 +1,3 @@
-// Demande à l'utilisateur si il veut aller à la piscine
-
-// Si oui
-// Demande son age
-// Variable le prix de base de l'entrée à la piscine
-
-// Si il a moins de 18 ans 
-// Affiche qu'il a le droit a une reduction de 50%
-// Affiche tu dois payer XXX euros
-// Sinon
-// Affiche il doit payer le tarif plein
-// Affiche tu dois payer XXX euros
-
-//  Sinon
-//  Affiche il n'y a pas d'autre sport disponible
-
 const response = prompt('Voulez-vous aller à la piscine')
 
 if (response == 'oui') {

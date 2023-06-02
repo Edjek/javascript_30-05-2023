@@ -16,17 +16,11 @@ const person = {
     }
 }
 
+// Pour acceder à la une propriété d'un objet
+console.log(person.job.name);
 const messsage = person.getIdentity();
 console.log(messsage);
 
-// Créer un objet sangoku
-// prenom 'san'
-// nom 'goku'
-// enfant (tableau : 'gohan' et 'goten')
-// age 39
-// method presentation qui retourne le message 'Je m'apelle san goku et j'ai 2 enfants et ils s'apellent gohan et goten
-
-// affiche le message
 const sangoku = {
     firstname : 'san',
     lastname: 'goku',
@@ -36,6 +30,5 @@ const sangoku = {
         return `Je m'appelle ${this.firstname} ${this.lastname}, j'ai ${this.age} ans et j'ai ${this.children.length}, ils s'appellent ${this.children[0]} et ${this.children[1]}`
     }
 }
-
 const presentation = sangoku.presentation();
 console.log(presentation);
