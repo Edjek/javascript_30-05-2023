@@ -23,7 +23,7 @@ res = animals.unshift('hiboux')
 // Supprime le premier élément du tableau
 // Renvoie l'élément supprimé
 res = animals.shift()
-// console.log(res);
+console.log(res);
 
 // Modifier ou Ajouter ou Supprimer un élément dans un tableau
 // Ajouter
@@ -72,5 +72,5 @@ function modifyArray(array) {
 }
 
 const sizeArray = modifyArray(capitalesCities)
-console.log(sizeArray);
+console.log(`le tableau comporte ${sizeArray} elements`);
 console.log(capitalesCities);
