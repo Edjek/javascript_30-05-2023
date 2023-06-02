@@ -16,6 +16,7 @@ const week = [
 ];
 // console.log(week);
 // console.table(week);
+
 // On peut accéder à un élément du tableau en utilisant son index numérique.
 // L'index du premier élément est toujours 0.
 console.log(week[1]);
