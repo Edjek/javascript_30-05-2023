@@ -43,6 +43,7 @@ const newAnimals2 = animals.join('-')
 // Renvoie une copie d'une partie du tableau
 const newAnimals = animals.slice(2, 7)
 
+// Reconstruisons la fonction slice()
 function slice(array, start, end) {
     let newArray = [];
     for (let i = start; i < end; i++) {
@@ -60,7 +61,7 @@ slice(animals, 1, 5)
         Retire Madrid
         Ajoute au debut Vienne
         Rome devient Alger
-        Afficher le tableau
+        Retourne le tableau
 */
 const capitalesCities = ['Paris', 'Berlin', 'Rome', 'Moscou', 'Londres', 'Madrid'];
 
@@ -74,3 +75,37 @@ function modifyArray(array) {
 const sizeArray = modifyArray(capitalesCities)
 console.log(`le tableau comporte ${sizeArray} elements`);
 console.log(capitalesCities);
+
+// Déclarer un tableau de fruits ('kiwi','banane', 'fraise', 'framboise')
+// Faire une boucle for() qui affiche en console tous les fruits
+const fruits = ['kiwi', 'banane', 'fraise', 'framboise'];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// forEach() est une méthode JavaScript qui permet d'itérer sur les éléments d'un tableau
+// et d'exécuter une fonction donnée pour chaque élément.
+fruits.forEach(function (fruit) {
+    console.log(fruit);
+})
+
+// for(...of...)  permet de parcourir les éléments d'un objet itérable (ex: tableau, string)
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+// Déeclarer un tableau ('chien', 'chat', 'poisson', 'oiseau')
+// Utiliser les 3 boucles pour afficher chaque element du tableau
+const pets = ['chien', 'chat', 'poisson', 'oiseau']
+for (let i = 0; i < pets.length; i++) {
+    console.log(pets[i]);
+}
+
+pets.forEach(function (pet) {
+    console.log(pet);
+})
+
+for (let pet of pets) {
+    console.log(pet);
+}

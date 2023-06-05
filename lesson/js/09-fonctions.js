@@ -14,62 +14,36 @@ function multiply(x, y) {
 }
 
 // Une fonction n'est executée que lorsqu'elle est appelée
-
 const result = multiply(100, 700)
 console.log(result);
 
-// fonction math 3 parametres
-// mulitplie le premier avec le deuxieme et la troisieme divise le tout
-// retourne le resultat
-
-// Appellez la fonction avec ces 3 parametres 10, 20, 8
-// aAffiche en console le resultat
-function math(x, y, z) {
-    const result = x * y / z;
-}
-
-let resultat = math(10, 20, 30)
-console.log(resultat);
-
-// crééz moi une fonction qui s'appelle displayHelloWorld
-// affiche en console 'Hello, World!'
-
-// Appelez fonction
-
+// Déclaration de fonction
 function displayHelloWorld() {
     console.log('Hello, world!');
 }
 
-displayHelloWorld()
+// Appelle de la fonction
 displayHelloWorld()
 
-// Créer une fonction displayMessage
-// Prend un parametre
-// Affiche en console le parametre
-
-// Appelle la fonction en lui passant un parametre
+// Déclaration de fonction avec parametre
 function displayMessage(message) {
     console.log(message);
 }
 
+// Appelle la fonction en lui passant un parametre
 displayMessage('coucou')
 displayMessage('Hello, world!')
 const message = 'salut, tout le monde';
-
 displayMessage(message)
 
-// Créer une fonction helloUser
-// prend 2 parametre un nom et un prenom
-// return une chaine de caractere qui sera 'Bonjour NOM PRENOM'
-
-// Appeler ma fonction
-// et je vais afficher en console le message
 function helloUser(lastName, firstName) {
     return `Bonjour, ${lastName} ${firstName}`
 }
 
 const res = helloUser('Sabri', 'Z')
 console.log(res);
+
+// Créer une fonction qui true si l'utilisateur est majeur sinon false
 
 function isLegalAge(age) {
     if (age >= 18) {
@@ -85,28 +59,29 @@ console.log(isAdult);
 function pow(number) {
     return number * number
 }
-
 const res3 = pow(18)
 console.log(res3);
 
 
-// Rendre parametrable cette fonction pour pouvoir afficher la table que je veux
-function nineTable(num, end) {
+function multiplication(num, end) {
     for (let i = 0; i <= end; i++) {
         let result = i * num
         console.log(`${num} x ${i} = ${result}`);
     }
 }
 
-nineTable(10, 100)
+multiplication(10, 100)
 
+// Il est possible de sauvegarder une fonction dans une variable
+// On les appelles des fonctions anonymes
 const add = function (x, y) {
     return x + y
 }
-const res4 = add(12,13)
+const res4 = add(12, 13)
 console.log(res4);
 
-const divide = ()=>{
-    
+// Il existe une nouvelle syntaxe (les fonctions fléchées)
+// Elles permettent d'écrire plus simplement des fonctions anonymes
+const divide = (x, y) => {
+    return x / y;
 }
-

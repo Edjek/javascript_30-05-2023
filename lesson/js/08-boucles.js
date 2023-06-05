@@ -22,7 +22,7 @@ let i = 0;
 
 while (i < 10) {
     let result = number * i
-    console.log(`${number} x ${i} = ${result}`)
+    console.log(`la table de multiplication de ${number} : ${number} x ${i} = ${result}`)
     i = i + 1;
     // SUCRE SYNTAXIQUE (version raccourci de i = i + 1)
     // i++;
@@ -35,6 +35,14 @@ while (answer != magicNumber) {
     answer = prompt('Essayez encore!')
 }
 console.log('Félicitation, vous avez trouvez le nombre magique !');
+
+
+// BOUCLE do{...}while() execute toujours une fois l'instruction avant de vérifier la condition
+
+do {
+    boucle++;
+    console.log(boucle);
+} while (boucle <= 10);
 
 /*
     La population de la ville Marrakech est de 1, 000, 000 d’habitants et elle augmente de 50, 000 habitants par an.
