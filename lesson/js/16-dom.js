@@ -1,5 +1,9 @@
 /* --------------------------- Manipulation du DOM --------------------------- */
 
+/*  -------------------------------------------
+    Methodes de selecteurs JavaScript
+    -------------------------------------------
+*/
 
 //  ? La methode `getElementById()`
 const title = document.getElementById('title')
@@ -80,3 +84,14 @@ title.classList.add('title')
 
 // La méthode `remove()` permet de supprimer une classe d'un élément HTML.
 title.classList.remove('title')
+
+// La méthode `contains()` permet de vérifier si un élément HTML possède une classe donnée.
+title.classList.contains('title')
+
+// La propriété `src` permet de récupérer ou de définir la valeur de l'attribut `src` d'une balise `img`.
+const portrait = document.querySelector('.portrait');
+portrait.src = '../img/portrait-2';
+
+// La propriété `href` permet de récupérer ou de définir la valeur de l'attribut `href` d'une balise `a`.
+const link = document.querySelector('a');
+link.href = 'https://www.google.com';

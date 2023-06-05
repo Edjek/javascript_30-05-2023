@@ -6,13 +6,23 @@
 const subtitle = document.querySelector('#subtitle');
 const title = document.querySelector('#title')
 
-subtitle.addEventListener('click', function () {
-    subtitle.innerText = 'text'
-
+title.addEventListener('click', function(){
+    // Si il a la class title
+        // on enleve la class title
+    // Sinon 
+        // je rajoute la class title
 })
 
-subtitle.addEventListener('dblclick', function () {
-    // changer le titre du h1
 
+subtitle.addEventListener('click', function(){
+    const image = document.querySelector('#portrait')
+    subtitle.innerText ='text'
+    // change l'image donc le src
+    image.src = ''
+    
+})
+
+subtitle.addEventListener('dblclick', function(){
+    title.innerText = 'modification'
 })
 
