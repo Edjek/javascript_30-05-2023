@@ -9,14 +9,14 @@
 const title = document.getElementById('title')
 
 /*
-    ? La methode `getElementsByTagName()`
-    getElementsByClassName renvoi une HTMLCollection 
-    sur laquelle on pourra itérer avec la boucle for()
+? La methode `getElementsByTagName()`
+getElementsByClassName renvoi une HTMLCollection 
+sur laquelle on pourra itérer avec la boucle for()
 */
 const subtitle = document.getElementsByTagName('h2')
 
 for (let i = 0; i < subtitle.length; i++) {
-    console.log(subtitle[i]);
+    // console.log(subtitle[i]);
 }
 
 /*
@@ -25,11 +25,11 @@ for (let i = 0; i < subtitle.length; i++) {
     sur laquelle on pourra itérer avec la boucle for()
 */
 const container = document.getElementsByClassName('container')
-console.log(container);
+// console.log(container);
 
 //  ? La methode `querySelector`
-const paragraphe = document.querySelector('.container p')
-console.log(paragraphe);
+const paragraphe = document.querySelector('#title')
+// console.log(paragraphe);
 
 /*
     ? La methode `querySelectorAll`
@@ -50,9 +50,6 @@ const paragraphes = document.querySelectorAll('.container p')
 //     console.log(paragraphes[i]);
 // }
 
-console.log(this);
-console.log(window.outerWidth);
-
 /*  ---------------------------------------------
     Quelques proprietes liées aux éléments du DOM
     ---------------------------------------------
@@ -65,16 +62,16 @@ console.log(window.outerWidth);
 title.style.color = 'red'
 
 // La propriété `innerText` permet de récupérer ou de définir le contenu textuel d'un élément HTML.
-title.innerText = 'Je suis <br> un titre modifié en javascript'
+title.innerText = 'Je suis <br> un <em> titre </em> modifié en javascript'
 
 // La propriété `innerHTML` permet de récupérer ou de définir le contenu HTML d'un élément HTML (le HTML est interprété).
-title.innerHTML = 'Je suis <br> un titre modifié en javascript'
+title.innerHTML = 'Je suis <br> un <em> titre </em> modifié en javascript'
 
 // La méthode `setAttribute()` permet de définir la valeur d'un attribut HTML.
 title.setAttribute('title', 'Je suis un titre')
 
 // La méthode `getAttribute()` permet de récupérer la valeur d'un attribut HTML.
-console.log(title.getAttribute('title'));
+// console.log(title.getAttribute('title'));
 
 // La méthode `removeAttribute()` permet de supprimer un attribut HTML.
 title.removeAttribute('title')
@@ -88,6 +85,9 @@ title.classList.remove('title')
 // La méthode `contains()` permet de vérifier si un élément HTML possède une classe donnée.
 title.classList.contains('title')
 
+// La méthode `toggle()` permet d'ajouter une classe à un élément HTML si elle n'existe pas, sinon elle la supprime.
+title.classList.toggle('title')
+
 // La propriété `src` permet de récupérer ou de définir la valeur de l'attribut `src` d'une balise `img`.
 const portrait = document.querySelector('.portrait');
 portrait.src = '../img/portrait-2';
@@ -95,3 +95,18 @@ portrait.src = '../img/portrait-2';
 // La propriété `href` permet de récupérer ou de définir la valeur de l'attribut `href` d'une balise `a`.
 const link = document.querySelector('a');
 link.href = 'https://www.google.com';
+
+/*  -------------------------------------------
+    Creer des elements
+    -------------------------------------------
+*/
+const form = document.querySelector('#connexion-form')
+
+const elem = document.createElement('div')
+elem.innerHTML = '<h2>coucou<h2/>'
+elem.classList.add('message')
+// form.append(elem)
+// form.prepend(elem)
+console.log(form.parentElement.prepend(elem));
+
+

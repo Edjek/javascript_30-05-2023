@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dom</title>
-        <link rel="stylesheet" href="../css/dom.css">
-        <script src="../js/17-events.js" defer></script>
+        <link rel="stylesheet" href="../css/dom.css" />
+        <script src="../js/16-dom.js" defer></script>
     </head>
     <body>
         <h1 id="title">La manipulation du dom en Javascript</h1>
@@ -24,7 +24,7 @@
                 ou Element permet de sélectionner une balise par son nom
                 (tagName).
             </p>
-            <p>
+            <p id="" class="">
                 La méthode Javascript getElementsByClassName() de l'objet
                 Document ou Element permet de sélectionner une balise par un
                 identifiant de class CSS contenu dans l'attribut HTML (class).
@@ -40,7 +40,18 @@
                 CSS.
             </p>
 
-            <img src="../img/portrait-1.jpg" alt="" class="portrait" id="portrait">
+            <img
+                src="../img/portrait-1.jpg"
+                alt=""
+                class="portrait"
+                id="portrait"
+            />
+            <a href=""></a>
+            <form id="connexion-form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" />
+                <input type="submit" value="Envoyer">
+            </form>
         </div>
     </body>
 </html>

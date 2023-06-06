@@ -23,8 +23,8 @@ const messsage = person.getIdentity();
 console.log(messsage);
 
 const sangoku = {
-    firstname: 'san',
     lastname: 'goku',
+    firstname: 'san',
     children: ['gohen', 'goten'],
     age: 39,
     presentation: function () {
