@@ -1,4 +1,4 @@
-/* --------------------------- Objets --------------------------- */
+/* --------------------------- OBJETS --------------------------- */
 
 // Les objets sont des structures de données complexes qui permettent de stocker des valeurs et des fonctions ensemble.
 

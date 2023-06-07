@@ -1,4 +1,4 @@
-/* --------------------------- FONCTIONS TABLEAUX --------------------------- */
+/* --------------------------- FONCTIONS SUR LES TABLEAUX --------------------------- */
 
 // ? Attention la plupart des méthodes modifient le tableau de départ
 
