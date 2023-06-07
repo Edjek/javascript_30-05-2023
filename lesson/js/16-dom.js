@@ -110,6 +110,17 @@ const elem = document.createElement('div');
 
 elem.innerHTML = '<h2>coucou<h2/>'
 elem.classList.add('message')
-// form.append(elem)
-// form.prepend(elem)
-// form.parentElement.prepend(elem);
+
+// append ajoute un element a la fin 
+form.append(elem)
+
+// prepend ajoute un element au debut
+form.prepend(elem)
+
+// remove supprime un element
+elem.remove()
+
+
+// parentElement permet de recuperer l'element parent
+form.parentElement
+
