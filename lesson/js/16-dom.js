@@ -96,17 +96,20 @@ portrait.src = '../img/portrait-2';
 const link = document.querySelector('a');
 link.href = 'https://www.google.com';
 
+// La propriété `value` permet de récupérer ou de définir la valeur d'un élément HTML.
+const input = document.querySelector('input');
+input.value = 'Je suis un input modifié en javascript';
+
 /*  -------------------------------------------
-    Creer des elements
+    Créer des elements
     -------------------------------------------
 */
-const form = document.querySelector('#connexion-form')
 
-const elem = document.createElement('div')
+const form = document.querySelector('#connexion-form');
+const elem = document.createElement('div');
+
 elem.innerHTML = '<h2>coucou<h2/>'
 elem.classList.add('message')
 // form.append(elem)
 // form.prepend(elem)
-console.log(form.parentElement.prepend(elem));
-
-
+// form.parentElement.prepend(elem);
