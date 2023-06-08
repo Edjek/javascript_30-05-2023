@@ -26,10 +26,10 @@ h1 {
 
 ul {
     padding: 30px;
-    list-style: none;
+    /* list-style: none; */
 }
 
-input[type="text"] {
+input[type='text'] {
     width: 60%;
     padding: 10px;
     border: 1px solid #ccc;
